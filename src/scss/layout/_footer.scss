@@ -223,6 +223,12 @@ html {
     width: 100vw;
     padding: 1rem;
     background-color: #304268;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    flex-direction: row-reverse;
+    text-align: left;
   }
 
   .nav1,
@@ -232,7 +238,6 @@ html {
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 16px;
     line-height: 1.6;
 
     a {
@@ -243,15 +248,12 @@ html {
     .ul1,
     .ul2 {
       width: 100px;
-      text-align: center;
     }
   }
 
   .copy {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
     color: white;
     font-size: 14px;
     font-family: var(--roboto);
@@ -262,14 +264,13 @@ html {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: -35px;
+    margin-top: -150px;
     width: 40px;
     height: 40px;
     background-color: white;
     border-radius: 50%;
     position: relative;
-    left: 50%;
-    transform: translateX(-50%);
+    right: 50%;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
     margin-bottom: 30px;
     cursor: pointer;
@@ -280,5 +281,5 @@ html {
       width: 40px;
       height: auto;
     }
-  }  
+  } 
 }

@@ -334,7 +334,8 @@ h3 {
 
   .reasons {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
     gap: 20px;
     padding: 20px;
     width: 100vw;
@@ -342,27 +343,36 @@ h3 {
     text-align: center;
     background-color: #eff9ff;
     line-height: 1.6;
+
+    .title2{
+      grid-column: 2;
+    }
   }
 
   .reasons section {
     padding: 20px;
     border-radius: 8px;
+    grid-row: 2;
 
     p {
       font-family: var(--roboto);
     }
   }
 
-  .btnMore {
-    width: 149px;
-    font-size: 16px;
-    font-weight: bold;
-    padding: 10px 20px;
-    background-color: #f26002;
-    color: white;
-    border: none;
-    border-radius: 20px;
-    margin-bottom: 30px;
-    cursor: pointer;
+  .more {
+    grid-column: 2;
+    grid-row: 3;
+    .btnMore {
+      width: 149px;
+      font-size: 16px;
+      font-weight: bold;
+      padding: 10px 20px;
+      background-color: #f26002;
+      color: white;
+      border: none;
+      border-radius: 20px;
+      margin-bottom: 30px;
+      cursor: pointer;
+    }
   }
 }
