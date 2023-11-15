@@ -1,6 +1,91 @@
-body {
-  padding: 2rem;
-  height: 100vh;
-  background-color: $color-bg;
-  font-family: $font-main;
+:root {
+  --roboto-slab: 'Roboto Slab', serif;
+  --roboto: 'Roboto Serif', serif;
 }
+
+body {
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+}
+
+h2, h3 {
+  font-family: var(--roboto-slab);
+}
+
+.insomniaTips {
+  padding-right: 15px;
+  padding-left: 15px;
+  padding-bottom: 40px;
+  line-height: 1.6;
+  font-family: var(--roboto);
+
+    .p1 {
+      color: #8ccbea;
+      font-weight: bold;
+    }
+
+    p {
+      color: #4a4a4a;
+      margin-top: 20px;
+      margin-bottom: 20px;
+    }
+
+    .btnGo {
+      border-radius: 20px;
+      border: 2px solid #f26002;
+      background-color: white;
+      padding: 10px 20px;
+      height: 34px;
+      width: 64px;
+      display: flex;
+      justify-content: center;
+      cursor: pointer;
+
+      .btn{
+        background: none;
+        border: none;
+        color: #f26002;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 16px;
+        font-weight: bold;
+
+      }
+    }
+}
+
+.reasons {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px; 
+  padding: 20px; 
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+  background-color: #eff9ff;
+  line-height: 1.6;
+}
+
+.reasons section{
+  padding: 20px;
+  border-radius: 8px;
+
+    p {
+      font-family: var(--roboto);
+    }
+}
+
+.btnMore {
+  width: 149px;
+  font-size: 16px;
+  font-weight: bold;
+  padding: 10px 20px; 
+  background-color: #f26002;
+  color: white;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
